@@ -171,6 +171,95 @@
     
     
     <article
+  id="post-FileUpload-Download"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+     
+    <div class="article-meta">
+      <a href="/2021/09/17/FileUpload-Download/" class="article-date">
+  <time datetime="2021-09-17T07:06:05.277Z" itemprop="datePublished">2021-09-17</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>文件上传下载</p>
+<p>1.定义file类型的输入框</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" alt="img" style="zoom:80%;" />
+
+<p>2.选择文件后校验文件大小和后缀</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img" style="zoom:80%;" />
+
+ 
+
+<p>3.struts2添加支持（name=”input”）</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img" style="zoom:80%;" />
+
+<p>4.后台接收file类型的参数</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img" style="zoom:80%;" />
+
+<p>5.定义文件接收路径</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img" style="zoom:80%;" />
+
+<p>6.拷贝文件到指定路径，数据库写入文件路径和文件名称</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg" alt="img" style="zoom:80%;" />
+
+<p>文件下载</p>
+<p>Autopage.xml中只需要添加如下代码,PageService会解析添加download链接;</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg" alt="img" style="zoom:80%;" />
+
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg" alt="img" style="zoom:80%;" />
+
+<p>Struts2添加下载支持</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg" alt="img" style="zoom:80%;" />
+
+ 
+
+ 
+
+<p>页面下载链接</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg" alt="img" style="zoom:80%;" />
+
+<p>Download后台方法</p>
+<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg" alt="img" style="zoom:80%;" />
+
+
+
+
+
+<p>以下内容为测试 ：)</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Insert</span> <span class="keyword">into</span> sys_bmxx <span class="keyword">values</span>(<span class="string">&#x27;&#x27;</span>,<span class="string">&#x27;&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String pop = request.getParameter(<span class="string">&quot;pop&quot;</span>);</span><br><span class="line"><span class="keyword">if</span>(Constant.TYPE_ALONG != pop)&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;Fail!&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此处需要引入概念“控制反转IOC”,”反射”</p>
+<p><img src="C:\Users\Administrator\Pictures\联想锁屏壁纸\10000.jpg"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
   id="post-StartHere"
   class="article article-type-post"
   itemscope
